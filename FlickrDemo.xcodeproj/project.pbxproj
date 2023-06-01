@@ -15,6 +15,10 @@
 		11E44D5C2A28B4D4006346A9 /* FlickrDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D5B2A28B4D4006346A9 /* FlickrDemoUITests.swift */; };
 		11E44D5E2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D5D2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift */; };
 		11E44D6E2A28BD90006346A9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D6D2A28BD90006346A9 /* Configuration.swift */; };
+		11E44D732A28BF7C006346A9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D722A28BF7C006346A9 /* AppConstants.swift */; };
+		11E44D762A28BFD0006346A9 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D752A28BFD0006346A9 /* ViewExt.swift */; };
+		11E44D792A28C000006346A9 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D782A28C000006346A9 /* TextModifier.swift */; };
+		11E44D7B2A28C010006346A9 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D7A2A28C010006346A9 /* ViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		11E44D6D2A28BD90006346A9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UAT.xcconfig; sourceTree = "<group>"; };
 		11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
+		11E44D722A28BF7C006346A9 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		11E44D752A28BFD0006346A9 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		11E44D782A28C000006346A9 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		11E44D7A2A28C010006346A9 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,9 @@
 		11E44D3E2A28B4D2006346A9 /* FlickrDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11E44D772A28BFEE006346A9 /* Modifiers */,
+				11E44D742A28BFC1006346A9 /* Extensions */,
+				11E44D712A28BF65006346A9 /* Constants */,
 				11E44D6C2A28BD80006346A9 /* Config */,
 				11E44D3F2A28B4D2006346A9 /* FlickrDemoApp.swift */,
 				11E44D412A28B4D2006346A9 /* ContentView.swift */,
@@ -144,6 +155,31 @@
 				11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		11E44D712A28BF65006346A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D722A28BF7C006346A9 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		11E44D742A28BFC1006346A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D752A28BFD0006346A9 /* ViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11E44D772A28BFEE006346A9 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D782A28C000006346A9 /* TextModifier.swift */,
+				11E44D7A2A28C010006346A9 /* ViewModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E44D6E2A28BD90006346A9 /* Configuration.swift in Sources */,
+				11E44D792A28C000006346A9 /* TextModifier.swift in Sources */,
 				11E44D422A28B4D2006346A9 /* ContentView.swift in Sources */,
+				11E44D762A28BFD0006346A9 /* ViewExt.swift in Sources */,
 				11E44D402A28B4D2006346A9 /* FlickrDemoApp.swift in Sources */,
+				11E44D7B2A28C010006346A9 /* ViewModifier.swift in Sources */,
+				11E44D732A28BF7C006346A9 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
