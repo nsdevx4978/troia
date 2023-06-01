@@ -46,6 +46,10 @@ extension ContactPhotoListViewModel: ContactPhotosListViewModelInterface {
         guard let iconFarm = photoModel.iconfarm, let server = photoModel.iconserver, let ownerId = photoModel.owner else {
             return nil
         }
+        
+        if iconFarm == 0 {
+            return nil
+        }
         return "https://farm\(iconFarm).staticflickr.com/\(server)/buddyicons/\(ownerId).jpg"
     }
     

@@ -39,6 +39,10 @@ extension PhotoListViewModel: PhotosListViewModelInterface {
             return nil
         }
         
+        if iconFarm == 0 {
+            return nil
+        }
+        
         return "https://farm\(iconFarm).staticflickr.com/\(server)/buddyicons/\(ownerId).jpg"
     }
     
