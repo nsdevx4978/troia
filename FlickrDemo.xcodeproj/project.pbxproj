@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11E44D402A28B4D2006346A9 /* FlickrDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D3F2A28B4D2006346A9 /* FlickrDemoApp.swift */; };
-		11E44D422A28B4D2006346A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D412A28B4D2006346A9 /* ContentView.swift */; };
 		11E44D442A28B4D3006346A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E44D432A28B4D3006346A9 /* Assets.xcassets */; };
 		11E44D482A28B4D3006346A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E44D472A28B4D3006346A9 /* Preview Assets.xcassets */; };
 		11E44D522A28B4D4006346A9 /* FlickrDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D512A28B4D4006346A9 /* FlickrDemoTests.swift */; };
@@ -19,6 +18,23 @@
 		11E44D762A28BFD0006346A9 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D752A28BFD0006346A9 /* ViewExt.swift */; };
 		11E44D792A28C000006346A9 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D782A28C000006346A9 /* TextModifier.swift */; };
 		11E44D7B2A28C010006346A9 /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D7A2A28C010006346A9 /* ViewModifier.swift */; };
+		11E44D8B2A28C3CD006346A9 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D8A2A28C3CD006346A9 /* PhotoListView.swift */; };
+		11E44D8D2A28C421006346A9 /* PhotoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D8C2A28C421006346A9 /* PhotoListModel.swift */; };
+		11E44D8F2A28C452006346A9 /* PhotoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D8E2A28C452006346A9 /* PhotoListRouter.swift */; };
+		11E44D912A28C4DE006346A9 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D902A28C4DE006346A9 /* PhotoListViewModel.swift */; };
+		11E44D932A28C526006346A9 /* ContactPhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D922A28C526006346A9 /* ContactPhotoListView.swift */; };
+		11E44D952A28C562006346A9 /* ContactPhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D942A28C562006346A9 /* ContactPhotoListViewModel.swift */; };
+		11E44D972A28C593006346A9 /* ContactPhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D962A28C593006346A9 /* ContactPhotoCard.swift */; };
+		11E44D992A28C5C2006346A9 /* PhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D982A28C5C2006346A9 /* PhotoCard.swift */; };
+		11E44D9C2A28C88B006346A9 /* MockPhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D9B2A28C88B006346A9 /* MockPhotoListViewModel.swift */; };
+		11E44D9F2A28C8F4006346A9 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D9E2A28C8F4006346A9 /* JSONParser.swift */; };
+		11E44DA12A28C90D006346A9 /* PhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DA02A28C90D006346A9 /* PhotosAPI.swift */; };
+		11E44DA32A28C931006346A9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DA22A28C931006346A9 /* APIError.swift */; };
+		11E44DA52A28C948006346A9 /* FetchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DA42A28C948006346A9 /* FetchAPI.swift */; };
+		11E44DA72A28C97A006346A9 /* DownloadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DA62A28C97A006346A9 /* DownloadAPI.swift */; };
+		11E44DAB2A28CEEE006346A9 /* MockPhotoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DAA2A28CEEE006346A9 /* MockPhotoDetailsViewModel.swift */; };
+		11E44DAD2A28CF13006346A9 /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DAC2A28CF13006346A9 /* PhotoDetailsView.swift */; };
+		11E44DAF2A28CF3C006346A9 /* PhotoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44DAE2A28CF3C006346A9 /* PhotoDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +57,6 @@
 /* Begin PBXFileReference section */
 		11E44D3C2A28B4D2006346A9 /* FlickrDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E44D3F2A28B4D2006346A9 /* FlickrDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDemoApp.swift; sourceTree = "<group>"; };
-		11E44D412A28B4D2006346A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11E44D432A28B4D3006346A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E44D452A28B4D3006346A9 /* FlickrDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlickrDemo.entitlements; sourceTree = "<group>"; };
 		11E44D472A28B4D3006346A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,6 +73,24 @@
 		11E44D752A28BFD0006346A9 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		11E44D782A28C000006346A9 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
 		11E44D7A2A28C010006346A9 /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
+		11E44D8A2A28C3CD006346A9 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		11E44D8C2A28C421006346A9 /* PhotoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListModel.swift; sourceTree = "<group>"; };
+		11E44D8E2A28C452006346A9 /* PhotoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListRouter.swift; sourceTree = "<group>"; };
+		11E44D902A28C4DE006346A9 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		11E44D922A28C526006346A9 /* ContactPhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhotoListView.swift; sourceTree = "<group>"; };
+		11E44D942A28C562006346A9 /* ContactPhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhotoListViewModel.swift; sourceTree = "<group>"; };
+		11E44D962A28C593006346A9 /* ContactPhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhotoCard.swift; sourceTree = "<group>"; };
+		11E44D982A28C5C2006346A9 /* PhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCard.swift; sourceTree = "<group>"; };
+		11E44D9B2A28C88B006346A9 /* MockPhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoListViewModel.swift; sourceTree = "<group>"; };
+		11E44D9E2A28C8F4006346A9 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		11E44DA02A28C90D006346A9 /* PhotosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPI.swift; sourceTree = "<group>"; };
+		11E44DA22A28C931006346A9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		11E44DA42A28C948006346A9 /* FetchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPI.swift; sourceTree = "<group>"; };
+		11E44DA62A28C97A006346A9 /* DownloadAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAPI.swift; sourceTree = "<group>"; };
+		11E44DAA2A28CEEE006346A9 /* MockPhotoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoDetailsViewModel.swift; sourceTree = "<group>"; };
+		11E44DAC2A28CF13006346A9 /* PhotoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsView.swift; sourceTree = "<group>"; };
+		11E44DAE2A28CF3C006346A9 /* PhotoDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewModel.swift; sourceTree = "<group>"; };
+		11E44DB02A28DA49006346A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +142,14 @@
 		11E44D3E2A28B4D2006346A9 /* FlickrDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11E44DB02A28DA49006346A9 /* Info.plist */,
+				11E44D9D2A28C8D8006346A9 /* APIManager */,
+				11E44D882A28C392006346A9 /* Modules */,
 				11E44D772A28BFEE006346A9 /* Modifiers */,
 				11E44D742A28BFC1006346A9 /* Extensions */,
 				11E44D712A28BF65006346A9 /* Constants */,
 				11E44D6C2A28BD80006346A9 /* Config */,
 				11E44D3F2A28B4D2006346A9 /* FlickrDemoApp.swift */,
-				11E44D412A28B4D2006346A9 /* ContentView.swift */,
 				11E44D432A28B4D3006346A9 /* Assets.xcassets */,
 				11E44D452A28B4D3006346A9 /* FlickrDemo.entitlements */,
 				11E44D462A28B4D3006346A9 /* Preview Content */,
@@ -180,6 +215,69 @@
 				11E44D7A2A28C010006346A9 /* ViewModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		11E44D882A28C392006346A9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11E44DA82A28CEC8006346A9 /* PhotoDetails */,
+				11E44D892A28C3BB006346A9 /* PhotoList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11E44D892A28C3BB006346A9 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D9A2A28C869006346A9 /* Mock */,
+				11E44D982A28C5C2006346A9 /* PhotoCard.swift */,
+				11E44D8A2A28C3CD006346A9 /* PhotoListView.swift */,
+				11E44D8C2A28C421006346A9 /* PhotoListModel.swift */,
+				11E44D8E2A28C452006346A9 /* PhotoListRouter.swift */,
+				11E44D902A28C4DE006346A9 /* PhotoListViewModel.swift */,
+				11E44D922A28C526006346A9 /* ContactPhotoListView.swift */,
+				11E44D942A28C562006346A9 /* ContactPhotoListViewModel.swift */,
+				11E44D962A28C593006346A9 /* ContactPhotoCard.swift */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		11E44D9A2A28C869006346A9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D9B2A28C88B006346A9 /* MockPhotoListViewModel.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		11E44D9D2A28C8D8006346A9 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D9E2A28C8F4006346A9 /* JSONParser.swift */,
+				11E44DA02A28C90D006346A9 /* PhotosAPI.swift */,
+				11E44DA22A28C931006346A9 /* APIError.swift */,
+				11E44DA42A28C948006346A9 /* FetchAPI.swift */,
+				11E44DA62A28C97A006346A9 /* DownloadAPI.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		11E44DA82A28CEC8006346A9 /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				11E44DA92A28CED4006346A9 /* Mock */,
+				11E44DAC2A28CF13006346A9 /* PhotoDetailsView.swift */,
+				11E44DAE2A28CF3C006346A9 /* PhotoDetailsViewModel.swift */,
+			);
+			path = PhotoDetails;
+			sourceTree = "<group>";
+		};
+		11E44DA92A28CED4006346A9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				11E44DAA2A28CEEE006346A9 /* MockPhotoDetailsViewModel.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +412,27 @@
 			files = (
 				11E44D6E2A28BD90006346A9 /* Configuration.swift in Sources */,
 				11E44D792A28C000006346A9 /* TextModifier.swift in Sources */,
-				11E44D422A28B4D2006346A9 /* ContentView.swift in Sources */,
+				11E44D9C2A28C88B006346A9 /* MockPhotoListViewModel.swift in Sources */,
+				11E44DAB2A28CEEE006346A9 /* MockPhotoDetailsViewModel.swift in Sources */,
+				11E44D912A28C4DE006346A9 /* PhotoListViewModel.swift in Sources */,
 				11E44D762A28BFD0006346A9 /* ViewExt.swift in Sources */,
+				11E44D972A28C593006346A9 /* ContactPhotoCard.swift in Sources */,
 				11E44D402A28B4D2006346A9 /* FlickrDemoApp.swift in Sources */,
+				11E44DA32A28C931006346A9 /* APIError.swift in Sources */,
+				11E44DA52A28C948006346A9 /* FetchAPI.swift in Sources */,
+				11E44D932A28C526006346A9 /* ContactPhotoListView.swift in Sources */,
 				11E44D7B2A28C010006346A9 /* ViewModifier.swift in Sources */,
+				11E44D9F2A28C8F4006346A9 /* JSONParser.swift in Sources */,
 				11E44D732A28BF7C006346A9 /* AppConstants.swift in Sources */,
+				11E44DA72A28C97A006346A9 /* DownloadAPI.swift in Sources */,
+				11E44D8F2A28C452006346A9 /* PhotoListRouter.swift in Sources */,
+				11E44DA12A28C90D006346A9 /* PhotosAPI.swift in Sources */,
+				11E44D8B2A28C3CD006346A9 /* PhotoListView.swift in Sources */,
+				11E44DAD2A28CF13006346A9 /* PhotoDetailsView.swift in Sources */,
+				11E44D992A28C5C2006346A9 /* PhotoCard.swift in Sources */,
+				11E44D952A28C562006346A9 /* ContactPhotoListViewModel.swift in Sources */,
+				11E44D8D2A28C421006346A9 /* PhotoListModel.swift in Sources */,
+				11E44DAF2A28CF3C006346A9 /* PhotoDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +596,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlickrDemo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -520,6 +635,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlickrDemo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
