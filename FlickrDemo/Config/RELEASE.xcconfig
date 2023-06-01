@@ -1,0 +1,12 @@
+//
+//  RELEASE.xcconfig
+//  FlickrDemo
+//
+//  Created by ervinaydin on 01/06/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+YBS_HOST = www.flickr.com
+YBS_CLIENT_ID = e18efd29252e77d7de60f4ed234e221f

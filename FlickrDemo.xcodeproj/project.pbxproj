@@ -14,6 +14,7 @@
 		11E44D522A28B4D4006346A9 /* FlickrDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D512A28B4D4006346A9 /* FlickrDemoTests.swift */; };
 		11E44D5C2A28B4D4006346A9 /* FlickrDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D5B2A28B4D4006346A9 /* FlickrDemoUITests.swift */; };
 		11E44D5E2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D5D2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift */; };
+		11E44D6E2A28BD90006346A9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E44D6D2A28BD90006346A9 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,10 @@
 		11E44D572A28B4D4006346A9 /* FlickrDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E44D5B2A28B4D4006346A9 /* FlickrDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDemoUITests.swift; sourceTree = "<group>"; };
 		11E44D5D2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11E44D6A2A28B6E0006346A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E44D6D2A28BD90006346A9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UAT.xcconfig; sourceTree = "<group>"; };
+		11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		11E44D332A28B4D2006346A9 = {
 			isa = PBXGroup;
 			children = (
+				11E44D6A2A28B6E0006346A9 /* Info.plist */,
 				11E44D3E2A28B4D2006346A9 /* FlickrDemo */,
 				11E44D502A28B4D4006346A9 /* FlickrDemoTests */,
 				11E44D5A2A28B4D4006346A9 /* FlickrDemoUITests */,
@@ -95,6 +101,7 @@
 		11E44D3E2A28B4D2006346A9 /* FlickrDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11E44D6C2A28BD80006346A9 /* Config */,
 				11E44D3F2A28B4D2006346A9 /* FlickrDemoApp.swift */,
 				11E44D412A28B4D2006346A9 /* ContentView.swift */,
 				11E44D432A28B4D3006346A9 /* Assets.xcassets */,
@@ -127,6 +134,16 @@
 				11E44D5D2A28B4D4006346A9 /* FlickrDemoUITestsLaunchTests.swift */,
 			);
 			path = FlickrDemoUITests;
+			sourceTree = "<group>";
+		};
+		11E44D6C2A28BD80006346A9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11E44D6D2A28BD90006346A9 /* Configuration.swift */,
+				11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */,
+				11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E44D6E2A28BD90006346A9 /* Configuration.swift in Sources */,
 				11E44D422A28B4D2006346A9 /* ContentView.swift in Sources */,
 				11E44D402A28B4D2006346A9 /* FlickrDemoApp.swift in Sources */,
 			);
@@ -299,6 +317,7 @@
 /* Begin XCBuildConfiguration section */
 		11E44D5F2A28B4D4006346A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -347,6 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,6 +377,7 @@
 		};
 		11E44D602A28B4D4006346A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -399,6 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -408,6 +430,7 @@
 		};
 		11E44D622A28B4D4006346A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,9 +450,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -446,6 +468,7 @@
 		};
 		11E44D632A28B4D4006346A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,9 +488,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -484,6 +506,7 @@
 		};
 		11E44D652A28B4D4006346A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +530,7 @@
 		};
 		11E44D662A28B4D4006346A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +554,7 @@
 		};
 		11E44D682A28B4D4006346A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D6F2A28BDA7006346A9 /* UAT.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +577,7 @@
 		};
 		11E44D692A28B4D4006346A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E44D702A28BDB4006346A9 /* RELEASE.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
