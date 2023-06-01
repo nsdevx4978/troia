@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct FlickrDemoApp: App {
+    let viewModel = PhotoListViewModel(photosFetcher: PhotosAPI())
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhotoListView(viewModel: viewModel)
         }
     }
 }
